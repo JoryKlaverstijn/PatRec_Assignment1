@@ -1,0 +1,17 @@
+datapoints = load("kmeans1.mat").kmeans1;
+class_labels = k_means(2, datapoints);
+
+print_types = ['go' 'r+' 'bo' 'm+'];
+
+disp(class_labels)
+
+for p=1:length(datapoints)
+    plot(xtic, print_types(class_labels(p)))
+    
+end
+
+
+% plot(scaled_data(   1:50,1),scaled_data(   1:50,2),'go');
+% plot(scaled_data( 51:100,1),scaled_data( 51:100,2),'r+');
+% plot(scaled_data(101:150,1),scaled_data(101:150,2),'bo');
+% plot(scaled_data(151:200,1),scaled_data(151:200,2),'m+');
