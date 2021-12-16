@@ -29,3 +29,4 @@ scatter(weight, age)
 xlabel('weight (kg)')
 ylabel('age')
 title('Plot B: weight vs. age')
+
