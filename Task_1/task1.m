@@ -7,7 +7,7 @@ for i = 1:3
         covariance = covariance(1, 2);
         correlation = covariance / (std(features(:, i)) * std(features(:, j)));
         correlations(i, j) = correlation;
-    end
+        end
 end
 
 disp(correlations);
